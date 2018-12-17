@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- CDN do Bootstrap 4  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Novale Hub</title>
+</head>
+
+<body>
+  <!-- Botão de contato no canto superior direito da página  -->
+  <nav id="header" class="navbar navbar-dark fixed-top mt-4 ml-2">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="mailto:secretaria@novalehub.com.br" class="nav-link mr-2">Contato</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal (Texto e botões dos editais) a imagem de fundo é a foto da JaraguáTec -->
+  <div id="mainContent" class="container text-white">
+    <!-- div com o logo da Novale como image de fundo com o efeito parallax do stellar.js  -->
+    <div id="novaleLogo" data-stellar-background-ratio="0.1" class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-8">
+          <h1 class="text-dark">NOVO WEBSITE EM BREVE</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-top">
+        <div class="col-12">
+          <a href="http://www.28.dtikm5.com/w/1e1e1DtpefhgviWNDW0Kebf8dd249e!uid?egu=5vbf9zjars4z2b4f" class="btn btn-primary rounded-0" target="_blank">Edital para Seleção da Incubadora</a>
+          <a href="http://www.28.dtikm5.com/w/1e2e1DtpebXlgZf1BSxle2d82ca46e!uid?egu=fxvy03l6bfhwai1x" class="btn btn-primary rounded-0" target="_blank">Edital para Seleção de Residente</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- div com o texto e input de email (não implementado)  -->
+  <div id="emailInput" class="container-fluid text-center p-0">
+    <div class="row align-items-center justify-content-center p-0">
+      <div class="col-5">
+        <h3 class="mb-5">Inscreva-se agora e seja o primeiro a saber quando estivermos no ar:</h3>
+        <div class="input-group mb-3">
+          <input required type="email" class="form-control rounded-0" placeholder="Endereço de email">
+        </div>
+        <button type="button" class="btn btn-primary rounded-0 btn-block">AVISE-ME</button>
+      </div>
+    </div>
+
+    <!-- div pra criar a parte branca depois do email  -->
+    <div id="filler" class="container-fluid mt-1"></div>
+
+    <!-- footer da página  -->
+    <h6 id="footer" class="my-4">© 2018 by Fábrica de Software Católica de Santa Catarina</h6>
+  </div>
+
+
+  <!-- Scripts para Bootstrap  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Scripts para stellar.js  -->
+  <script src="jquery-2.0.2.js"></script>
+  <script src="jquery.stellar.min.js"></script>
+  <script>
+    $.stellar();
+  </script>
+</body>
+
+</html>
