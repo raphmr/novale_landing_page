@@ -3,12 +3,16 @@ body {
   padding-top: 130px;
 }
 
+body,html {
+  width: 100%;
+}
+
 #mainContent {
   background-attachment: fixed;
   background-position: center;
   text-align: center;
   background-image: url('cij.png');
-  background-size: cover;
+  background-size: contain;
   padding: 0;
   width: 75%;
 }
@@ -22,7 +26,7 @@ body {
 }
 
 #header {
-  left: 92.5%;
+  left: 90.5%;
   width: 100px;
 }
 
@@ -37,11 +41,11 @@ body {
   transition: color 0.4s;
 }
 
-#emailInput, #filler {
+#emailInput {
   background-color: #FAFAFA;
 }
 
-#emailInput, .row {
+#emailInput {
   width: 100%;
   height: 600px;
 }
@@ -61,10 +65,6 @@ body {
   font-weight: 500;
 }
 
-#filler {
-  height: 460px;
-}
-
 #footer {
   color: white;
   font-weight: 100;
@@ -72,8 +72,11 @@ body {
 
 /* Posiciona os textos e botões em cima do logo da novale */
 #mainContent a {
-  transform: translate(0, -200px);
-  margin: 0 60px 0 60px;
+  transform: translate(0, 220px);
+}
+
+#mainContent h1 {
+  transform: translate(0, 200px);
 }
 
 #mainContent a:hover, #emailInput button:hover {
@@ -94,4 +97,40 @@ body {
 .btn:focus, .btn:active, .btn:hover {
   box-shadow: none !important;
   outline: 0;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 880px) {
+
+  /* Styles */
+  #mainContent a {
+    transform: translate(0px, 400px);
+    margin-top: 50px;
+  }
+
+  #mainContent h1 {
+    transform: translate(0, 350px);
+  }
+
+
+  body {
+    padding-top: 0;
+  }
+
+  #mainContent {
+    width: 100%;
+  }
+
+  #mainContent h1 {
+    font-size: 50px;
+  }
+
+  #novaleLogo {
+    background-position: 370% 0;
+  }
+
+  #header {
+    left: 80%;
+    width: 100px;
+  }
 }
